@@ -1,0 +1,93 @@
+
+
+
+  <!-- <div class="logbody">
+     <div *ngIf="ren">
+       <form #employeeForm="ngForm" (ngSubmit)="saveEmployee(employeeForm)">
+         <div class="form-group">
+           <label>UserName</label>
+           <input type="name"
+                  #name="ngModel"
+                  pattern="[a-zA-Z ]*$"
+                  required [class.is-invalid]="name.invalid && name.touched"
+                  class="form-control" name="Name" ngModel>
+           <small [class.d-none]="name.valid || name.untouched"></small>
+         </div>
+         <div class="form-group">
+           <label>Password</label>
+           <input type="password"
+                  #name="ngModel"
+                  pattern="[a-zA-Z ]*$"
+                  required [class.is-invalid]="name.invalid && name.touched"
+                  class="form-control" name="Password" ngModel>
+           <small [class.d-none]="name.valid || name.untouched"></small>
+         </div>
+         <button class="btn btn-primary"
+                 tooltip="Are You sure you have entered the correct details?"
+                 type="submit">
+           Login
+         </button>
+
+       </form>
+     </div>
+   </div>
+      -->
+
+    <div *ngIf="ren">
+      <div class="container">
+        <section id="content">
+          <form #employeeForm="ngForm" (ngSubmit)="saveEmployee(employeeForm)">
+            <h1>Login Form</h1>
+            <div>
+              <input type="text" placeholder="Username" required="required" id="username" #name="ngModel" ngModel
+                     pattern="[a-zA-Z ]*$"
+                     required [class.is-invalid]="name.invalid && name.touched" />
+            </div>
+            <div>
+              <input type="password" placeholder="Password" required="required" id="password" #name="ngModel"
+                     pattern="[a-zA-Z ]*$"
+                     required [class.is-invalid]="name.invalid && name.touched"
+                     class="form-control" name="Password" ngModel />
+            </div>
+      
+              <input type="submit" value="Log in" />
+       
+          </form><!-- form -->
+          
+            <form #employeeForm="ngForm" (ngSubmit)="saveEmployee1(employeeForm)" *ngIf="ren1">
+
+              <input type="submit" value="Sign Up" />
+
+            </form>
+          
+        </section><!-- content -->
+      </div><!-- container -->
+    </div>
+
+  <br>
+  <br>
+  
+  
+
+
+  <app-signup *ngIf="render"></app-signup>
+<app-news-headlines *ngIf="render1"></app-news-headlines>
+<!--<app-insertdata *ngIf="render"></app-insertdata>  -->
+<!--
+  #employeeForm contains user entered input of all fields
+  using (ngSubmit) we are calling saveEmployee method and we are passing
+  employeeForm as the parameter.
+  saveEmployee method is declaired in .ts file
+-->
+<!--
+  <div class="form-group">
+    <label for="Age">Age</label>
+    <input id="Age" type="text" class="form-control"
+           name="Age" [(ngModel)]="Age">
+  </div>
+
+
+
+
+
+-->

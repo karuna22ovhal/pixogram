@@ -1,0 +1,80 @@
+<html>
+<body>
+
+
+  <div *ngIf="ren3">
+    <div class="container">
+      <section id="content">
+
+        <form #employeeForm="ngForm" (ngSubmit)="saveEmployee3(employeeForm)">
+          <h1>SignUp Form</h1>
+          <div>
+            <input type="text" placeholder="FirstName" required="" id="firstname" #name="ngModel" ngModel
+                   pattern="[a-zA-Z ]*$"
+                   required [class.is-invalid]="name.invalid && name.touched" />
+          </div>
+          <div>
+            <input type="text" placeholder="LastName" required="" id="lastname" #name="ngModel" ngModel
+                   pattern="[a-zA-Z ]*$"
+                   required [class.is-invalid]="name.invalid && name.touched" />
+          </div>
+          <div>
+            <input type="text" placeholder="Email" required="" id="email" #name="ngModel" ngModel
+                   pattern="[a-zA-Z ]*$"
+                   required [class.is-invalid]="name.invalid && name.touched" />
+          </div>
+          <div>
+            <input type="text" placeholder="Username" required="" id="username" #name="ngModel" ngModel
+                   pattern="[a-zA-Z ]*$"
+                   required [class.is-invalid]="name.invalid && name.touched" />
+          </div>
+          <div>
+            <input type="password" placeholder="Password" required="" id="password" #name="ngModel"
+                   pattern="[a-zA-Z ]*$"
+                   required [class.is-invalid]="name.invalid && name.touched"
+                   class="form-control" name="Password" ngModel />
+          </div>
+          <div>
+            <select name="my_html_select_box">
+
+              <option selected="yes">Choose Language</option>
+              <option>ar </option>
+              <option>de</option>
+              <option>en</option>
+              <option>es</option>
+              <option>fr</option>
+              <option>he</option>
+              <option>it</option>
+              <option>nl</option>
+              <option>no</option>
+              <option>pt</option>
+              <option>ru</option>
+              <option>se</option>
+              <option>ud</option>
+              <option>zh</option>
+
+            </select>
+          </div>
+          <div>
+            <div>
+
+
+
+            </div>
+
+            <input type="submit" value="SignUp" />
+
+
+
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>

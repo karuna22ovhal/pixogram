@@ -1,0 +1,7 @@
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+body {
+  background-image: url('src/assets/img/2.jpeg');
+  padding: 2em 23em;
+  
+}

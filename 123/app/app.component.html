@@ -1,0 +1,76 @@
+
+<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="col-sm-20 col-xs-20">
+  <div *ngIf="login" class="modal-dialog modal-login col-sm-20">
+    <div class="modal-content col-sm-20">
+      <div class="modal-header col-sm-20">
+        <h4 class="modal-title">Sign in</h4>
+      </div>
+      <div class="modal-body col-sm-20">
+        <form #employeeForm="ngForm" (ngSubmit)="saveEmployee(employeeForm)">
+          <div class="form-group col-sm-20">
+            <i class="fa fa-user"></i>
+            <input type="text" class="form-control" placeholder="Username" required="required" />
+          </div>
+          <div class="form-group col-sm-20">
+            <i class="fa fa-lock"></i>
+            <input type="password" class="form-control" placeholder="Password" required="required">
+          </div>
+          <div class="form-group small clearfix col-sm-20">
+            <label class="checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+          <div class="form-group col-sm-20">
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Sign in">
+          </div>
+        </form>
+        <div class="form-group col-sm-20">
+          <form #employeeForm="ngForm" (ngSubmit)="saveEmployee1(employeeForm)">
+            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Sign Up">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-signup *ngIf="signup"></app-signup>
+  <app-news-headlines *ngIf="news"></app-news-headlines>
+  <router-outlet></router-outlet>
+
+</div>
+
+
+
+
+
+
+
+<!--<div class="container">
+  <div class="body"></div>
+  <div class="grad"></div>
+  <div class="header">
+    <div>
+      <strong>PixoGram</strong>
+    </div>
+  </div>
+  <br>
+  <div class="login">
+    <form action="my-media-page.html" method="GET">
+      <input type="text" placeholder="username" name="user"><br>
+      <input type="password" placeholder="password" name="password"><br>
+      <input type="submit" value="Login">
+    </form>
+    <p>
+      Don't have an account?   <a routerLink="/signup" class="nav-link" href="signup">Sign up</a>
+
+    </p>
+  </div>
+  <div class="underlay-photo"></div>
+  <div class="underlay-black"></div>
+
+</div>
+<router-outlet #routerOutlet="outlet"></router-outlet> -->
+

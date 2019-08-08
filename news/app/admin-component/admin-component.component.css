@@ -1,0 +1,23 @@
+login-main {
+  margin-top: 10%;
+}
+
+.mat-card {
+  min-width:20%;
+  margin-top: 10%;
+  background-color: burlywood;
+  
+}
+
+.button {
+  font-size: 100%;
+  background-color:white;
+}
+
+
+.title {
+  font-style: italic;
+  outline-width: thick;
+  font-size: 25px;
+}
+

@@ -1,0 +1,74 @@
+.example-spacer {
+  flex:1 0 auto;
+}
+.example-header-image {
+  background-size: cover;
+}
+
+.title {
+  font-weight: bold;
+  
+}
+
+.img-article {
+  height: 500px;
+  margin-left:2px;
+  width:100%;
+}
+
+.example-card {
+  margin-top: 4px;
+  background-size:cover;
+  width:auto;
+  height:auto;
+}
+
+.action-buttons{
+    text-align: center;
+    color:orangered;
+}
+
+.example-container {
+ 
+  width: 100%;
+  border: 1px solid rgba(111, 111, 111, 0.50);
+  width:auto;
+  
+  
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+}
+
+.example-sidenav {
+    padding: 10px;
+    width:auto;  
+}
+
+.source-name {
+    margin-left:5px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color:burlywood;
+  margin-left: 10px;
+}
+.mat-toolbar {
+  background-image: url("src/assets/wood.jpg");
+  color: white;
+  padding:20px;
+  width:auto;
+
+}
+.image {
+  background-image: url("src/assets/wood.jpg");
+  height:auto;
+  background-size: 100%;
+}
+

@@ -1,0 +1,60 @@
+<div class="image">
+  <div fxLayout="row" fxLayoutAlign="center center" class="login-main">
+    <mat-card>
+      <form action="http://localhost:8080/user/register" method="post"
+            #loginform="ngForm" (ngSubmit)="resetForm(loginform)" class="container">
+        <mat-card-header>
+          <mat-card-title class="title"><b>Sign Up</b> </mat-card-title>
+        </mat-card-header>
+        <mat-card-content fxLayout="column">
+          <mat-form-field>
+            <span class="spacer"></span>
+            <input type="text" matInput placeholder="First name" #firstname name="firstName" >
+          </mat-form-field>
+          <mat-form-field>
+            <input type="text" matInput placeholder="Last Name" #lastname name="lastname" >
+          </mat-form-field>
+          <mat-form-field>
+            <input type="text" matInput placeholder="Username" #username required>
+          </mat-form-field>
+          <mat-form-field>
+            <input type="password" matInput placeholder="Password" #password required>
+          </mat-form-field>
+          <mat-form-field>
+            <input type="email" matInput placeholder="Email" #email required>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Contact" #mobile name="mobile">
+          </mat-form-field>
+        </mat-card-content>
+        <mat-form-field>
+          <mat-label>Select Language</mat-label>
+          <select name="preferredLanguage" matNativeControl #prefLang required>
+            <option value=""></option>
+            <option value="ar">Arabic</option>
+            <option value="de">Spanish</option>
+            <option value="en">English</option>
+            <option value="es">es</option>
+            <option value="fr">French</option>
+            <option value="he">Hebrew</option>
+            <option value="it">Italian</option>
+            <option value="nl">Dutch</option>
+            <option value="no">Norwegian</option>
+            <option value="pt">Portuguese </option>
+            <option value="ru">Russian</option>
+            <option value="se">Serbian</option>
+            <option value="ud">Urdu</option>
+            <option value="zh">Chinese</option>
+          </select>
+        </mat-form-field>
+        <mat-card-actions align="center">
+          <a routerLink="/login" (click)="signup(firstname.value, lastname.value, username.value, password.value, email.value, mobile.value, prefLang.value)" mat-raised-button class="btn btn-info" role="button">Signup</a>
+        </mat-card-actions>
+      </form>
+    </mat-card>
+  </div>
+</div>
+
+
+
+

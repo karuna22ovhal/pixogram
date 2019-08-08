@@ -1,0 +1,21 @@
+login-main {
+  margin-top: 10%;
+}
+
+.mat-card {
+  margin-left:20%;
+  margin-right:20%;
+  margin-top: 5%;
+  background-color: burlywood;
+  width:50%;
+}
+
+.title{
+  font-style:italic;
+  outline-width:thick;
+  font-size:25px;
+}
+.full-width{
+  width:100%;
+}
+
